@@ -1,0 +1,23 @@
+[package]
+name = "large"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[dev-dependencies]
+num-bigint = "0.4"
+num-integer = "0.1"
+rand = "0.8"
+num-traits = "0.2"
+criterion = "0.3"
+pprof = { version = "0.10.0", features = ["flamegraph"] }
+num-rational = "0.4"
+
+
+[[bench]]
+name = "ops"
+harness = false
+
+[[example]]
+name = "mandelbrot"
